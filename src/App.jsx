@@ -1,7 +1,7 @@
 import { Routes, Route} from "react-router-dom"
 import './App.css'
 import Home from './pages/home'
-import Error from './components/Error'
+import Error from './components/error'
 import Login from "./pages/login"
 import Register from "./pages/register"
 import Dashboard from "./pages/admin/dashboard"
