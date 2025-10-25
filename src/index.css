@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.hero{
+  background-image: url("../public/image/conf.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dayone{
+    background-image: url("../public/image/techstars-abj-dayone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+@media screen and (max-width:650px) {
+  .sam{
+    margin-block: 130px !important;
+  }
+}
+
+
+
+@media screen and (max-width:640px) {
+  .sam{
+    margin-block: 120px !important;
+  }
+}
