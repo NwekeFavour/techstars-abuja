@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Download, Users, Home, LogOut, Menu } from "lucide-react";
+import { Download, Users, Home, LogOut, Menu, Search } from "lucide-react";
 
 const Dashboard = () => {
   const [users] = useState([
@@ -24,7 +24,6 @@ const Dashboard = () => {
       ["Name,Email,Role"]
         .concat(users.map((u) => `${u.name},${u.email},${u.role}`))
         .join("\n");
-
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
@@ -34,7 +33,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-[#f8f8f8] text-[#242424] relative">
+    <div className="flex min-h-screen bg-[#f8f9fb] text-[#242424] relative">
       {/* Sidebar */}
       <aside
         className={`fixed lg:static top-0 left-0 z-30 h-screen w-64 bg-white/90 backdrop-blur-md shadow-lg flex flex-col justify-between transition-transform duration-300 ${
@@ -42,23 +41,23 @@ const Dashboard = () => {
         } rounded-tr-[20px] rounded-br-[20px]`}
       >
         <div className="p-6">
-          <h2 className="text-xl font-bold mb-8 text-[#242424] tracking-tight">
-            Brand<span className="text-[#555]">Board</span>
+          <h2 className="text-2xl font-bold mb-10 text-[#242424]">
+            Tech<span className="text-[#777] font-medium">Stars</span>
           </h2>
 
-          <nav className="space-y-4">
+          <nav className="space-y-2 text-sm font-medium text-[#555]">
             <button className="flex items-center gap-3 w-full text-left hover:bg-gray-100 p-2 rounded-lg transition">
-              <Home size={20} /> Dashboard
+              <Home size={18} /> Dashboard
             </button>
             <button className="flex items-center gap-3 w-full text-left hover:bg-gray-100 p-2 rounded-lg transition">
-              <Users size={20} /> Users
+              <Users size={18} /> Users
             </button>
           </nav>
         </div>
 
         <div className="p-6 border-t border-gray-200">
           <button className="flex items-center gap-3 text-red-600 hover:bg-red-50 p-2 rounded-lg w-full transition">
-            <LogOut size={20} /> Logout
+            <LogOut size={18} /> Logout
           </button>
         </div>
       </aside>
@@ -72,9 +71,9 @@ const Dashboard = () => {
       )}
 
       {/* Main Content */}
-      <main className="flex-1 p-4 sm:p-6 md:p-10 transition-all duration-300 w-full">
+      <main className="flex-1 md:py-9 py-10 md:px-10 px-9 sm:p-6 md:p-10 transition-all duration-300 w-full">
         {/* Header */}
-        <header className="flex flex-wrap gap-4 items-center justify-between mb-8">
+        <header className="flex flex-wrap gap-4 items-center justify-between mb-10">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -82,8 +81,16 @@ const Dashboard = () => {
             >
               <Menu size={22} />
             </button>
-            <h1 className="text-2xl md:text-3xl font-bold">User Dashboard</h1>
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+                Welcome back, <span className="text-[#555]">Admin 👋</span>
+              </h1>
+              <p className="text-sm text-gray-500">
+                Here’s an overview of your users and activities
+              </p>
+            </div>
           </div>
+
           <button
             onClick={exportToCSV}
             className="flex items-center gap-2 bg-[#242424] text-white px-4 py-2 rounded-lg hover:bg-[#333] transition w-full sm:w-auto justify-center"
@@ -92,21 +99,45 @@ const Dashboard = () => {
           </button>
         </header>
 
+        {/* Overview Cards */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <div className="bg-white shadow-sm rounded-[20px] p-6 hover:shadow-md transition">
+            <h3 className="text-gray-500 text-sm">Total Users</h3>
+            <p className="text-3xl font-bold mt-2">{users.length}</p>
+          </div>
+          <div className="bg-white shadow-sm rounded-[20px] p-6 hover:shadow-md transition">
+            <h3 className="text-gray-500 text-sm">Active Admins</h3>
+            <p className="text-3xl font-bold mt-2">
+              {users.filter((u) => u.role === "Admin").length}
+            </p>
+          </div>
+          <div className="bg-white shadow-sm rounded-[20px] p-6 hover:shadow-md transition">
+            <h3 className="text-gray-500 text-sm">Editors</h3>
+            <p className="text-3xl font-bold mt-2">
+              {users.filter((u) => u.role === "Editor").length}
+            </p>
+          </div>
+        </section>
+
         {/* Search Bar */}
-        <div className="mb-6">
+        <div className="relative mb-6">
+          <Search
+            size={18}
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+          />
           <input
             type="text"
-            placeholder="Search users..."
+            placeholder="Search users by name or email..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#242424]"
+            className="w-full md:w-1/2 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-300"
           />
         </div>
 
         {/* Users Table */}
         <div className="bg-white/90 backdrop-blur-md shadow-md rounded-[20px] overflow-x-auto">
           <table className="w-full min-w-[500px] text-left border-collapse">
-            <thead className="bg-gray-100">
+            <thead className="bg-gray-100 text-gray-700">
               <tr>
                 <th className="py-3 px-6 font-semibold text-sm">Name</th>
                 <th className="py-3 px-6 font-semibold text-sm">Email</th>
@@ -120,9 +151,21 @@ const Dashboard = () => {
                     key={user.id}
                     className="border-t hover:bg-gray-50 transition"
                   >
-                    <td className="py-3 px-6">{user.name}</td>
-                    <td className="py-3 px-6">{user.email}</td>
-                    <td className="py-3 px-6">{user.role}</td>
+                    <td className="py-3 px-6 font-medium">{user.name}</td>
+                    <td className="py-3 px-6 text-gray-600">{user.email}</td>
+                    <td className="py-3 px-6">
+                      <span
+                        className={`px-3 py-1 text-xs font-semibold rounded-full ${
+                          user.role === "Admin"
+                            ? "bg-green-100 text-green-700"
+                            : user.role === "Editor"
+                            ? "bg-blue-100 text-blue-700"
+                            : "bg-gray-100 text-gray-600"
+                        }`}
+                      >
+                        {user.role}
+                      </span>
+                    </td>
                   </tr>
                 ))
               ) : (
