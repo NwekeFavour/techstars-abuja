@@ -71,7 +71,7 @@ const Dashboard = () => {
       )}
 
       {/* Main Content */}
-      <main className="flex-1 md:py-9 py-10 md:px-10 px-9 sm:p-6 md:p-10 transition-all duration-300 w-full">
+      <main className="flex-1 md:py-9 py-7 md:px-10 px-5 sm:p-6 md:p-10 transition-all duration-300 w-full">
         {/* Header */}
         <header className="flex flex-wrap gap-4 items-center justify-between mb-10">
           <div className="flex items-center gap-3">
@@ -82,7 +82,7 @@ const Dashboard = () => {
               <Menu size={22} />
             </button>
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+              <h1 className="text-[18px] md:text-3xl font-bold leading-tight">
                 Welcome back, <span className="text-[#555]">Admin 👋</span>
               </h1>
               <p className="text-sm text-gray-500">
