@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 .hero{
-  background-image: url("../public/image/conf.svg");
+  background-image: url("../public/image/conf.min.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
