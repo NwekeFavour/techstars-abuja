@@ -21,10 +21,10 @@ function HeroSection(props) {
                             <Button className="text-white lg:text-[20px] sm:text-[18px] md:text-[18px] hover:bg-white hover:text-[#0C0C9D] px-8 text-[17px] md:px-12 sm:px-14 sm:py-7 lg:px-9 py-7 rounded-[20px] bg-[#0C0C9D]">Register Now</Button>
                         </div>
                         <div className='mt-4'>
-                            <div className='flex items-center justify-center lg:space-x-16 sm:space-x-8 space-x-6 w-[360px] sm:w-[450px] md:space-x-10 mx-auto bg-white lg:w-[617px] md:w-[500px] rounded-[30px] h-[100px] sm:h-[120px]'>
+                            <div className='flex items-center justify-center lg:space-x-16 sm:space-x-8 space-x-6 w-[320px] sm:w-[450px] md:space-x-10 mx-auto bg-white lg:w-[617px] md:w-[500px] rounded-[30px] h-[90px] sm:h-[120px]'>
                                 <div>
                                     <div>
-                                        <p className="m-0 text-[#0C0C9D] md:text-[40px] sm:text-[35px] text-[30px] font-extrabold tracking-[-1%] text-center">128</p>
+                                        <p className="m-0 text-[#0C0C9D] md:text-[40px] sm:text-[35px] text-[25px] font-extrabold tracking-[-1%] text-center">128</p>
                                     </div>
                                     <div>
                                         <p className="m-0 text-[#9D0C2C] md:text-[16px] font-extrabold text-center">Days</p>
@@ -32,7 +32,7 @@ function HeroSection(props) {
                                 </div>   
                                 <div>
                                     <div>
-                                        <p className="m-0 text-[#0C0C9D] text-center md:text-[40px] sm:text-[35px] text-[30px] font-extrabold tracking-[-1%] ">128</p>
+                                        <p className="m-0 text-[#0C0C9D] text-center md:text-[40px] sm:text-[35px] text-[25px] font-extrabold tracking-[-1%] ">128</p>
                                     </div>
                                     <div>
                                         <p className="m-0 text-[#9D0C2C] md:text-[16px]  font-extrabold text-center">Days</p>
@@ -40,7 +40,7 @@ function HeroSection(props) {
                                 </div>
                                 <div>
                                     <div>
-                                        <p className="m-0 text-[#0C0C9D] md:text-[40px] sm:text-[35px] text-[30px] font-extrabold tracking-[-1%] text-center">128</p>
+                                        <p className="m-0 text-[#0C0C9D] md:text-[40px] sm:text-[35px] text-[25px] font-extrabold tracking-[-1%] text-center">128</p>
                                     </div>
                                     <div>
                                         <p className="m-0 text-[#9D0C2C] md:text-[16px] font-extrabold text-center">Days</p>
@@ -48,7 +48,7 @@ function HeroSection(props) {
                                 </div>
                                 <div>
                                     <div>
-                                        <p className="m-0 text-[#0C0C9D]  md:text-[40px] sm:text-[35px] text-[30px] font-extrabold tracking-[-1%] text-center">128</p>
+                                        <p className="m-0 text-[#0C0C9D]  md:text-[40px] sm:text-[35px] text-[25px] font-extrabold tracking-[-1%] text-center">128</p>
                                     </div>
                                     <div>
                                         <p className="m-0 text-[#9D0C2C] md:text-[16px] font-extrabold text-center">Days</p>

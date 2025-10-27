@@ -20,8 +20,8 @@ function Home() {
                             <p className="m-0 uppercase text-[#9D0C2C] text-[12px] font-bold!"><span className=' text-[#0C0C9D] '>event</span> overview</p>
                         </div>
                         <div className='xl:w-[588px]! md:w-[450px]'>
-                            <p className="m-0 md:text-[30px] xl:text-[35px] sm:text-[28px] font-extrabold text-[25px] md:leading-[40px] xl:leading-[55px] md:mb-2 tracking-[-1%]  sm:leading-[50px]">Get latest info about the event</p>
-                            <p className="m-0 md:text-[17px] text-[16px] xl:text-[18px] md:max-w-[550px]  sm:leading-[28px] lg:leading-[34px]">Techstars Startup Week is a five-day, entrepreneur-led, community event held in cities across the world to showcase the local startup ecosystem through meetups, lectures, discussions, and celebrations.</p>
+                            <p className="m-0 md:text-[30px] xl:text-[35px] sm:text-[28px] font-extrabold text-[25px] md:leading-10 xl:leading-[55px] md:mb-2 tracking-[-1%]  sm:leading-[50px]">Get latest info about the event</p>
+                            <p className="m-0 md:text-[17px] text-[16px] xl:text-[18px] md:max-w-[550px]  sm:leading-7 lg:leading-[34px]">Techstars Startup Week is a five-day, entrepreneur-led, community event held in cities across the world to showcase the local startup ecosystem through meetups, lectures, discussions, and celebrations.</p>
                         </div>
                         <div className='flex xl:w-[665px] md:w-[450px] sm:mt-10  md:mt-14 mt-9 items-center justify-start gap-4'>
                             <div className="bg-white shadow-[0_0_15px_#a1a1a1] block sm:flex gap-5 items-center justify-start w-[250px] md:w-[250px] sm:h-[100px] xl:w-[317px] h-[200px] ps-4 xl:h-[120px] sm:ps-3 xl:ps-7 py-7 sm:py-8 rounded-[20px] mb-2 lg:mb-0 md:mb-3">
@@ -82,14 +82,14 @@ function Home() {
                     <p className="m-0 uppercase text-[#9D0C2C] text-[12px] font-bold!"><span className=' text-[#0C0C9D] '>event</span> overview</p>
                 </div>
                 <div className='min-h-screen'>
-                    <div className="relative mx-auto flex flex-col items-center justify-center overflow-hidden w-[90%] max-w-[400px] md:max-w-[500px] lg:max-w-[650px] h-[80px] md:h-[140px] lg:h-[160px] pt-4 lg:pt-6">
+                    <div className="relative mx-auto flex flex-col items-center justify-center overflow-hidden w-[90%] max-w-[400px] md:max-w-[500px] lg:max-w-[650px] h-20 md:h-[140px] lg:h-40 pt-4 lg:pt-6">
 
-                    <div className="flex justify-center text-center text-[#242424] font-extrabold tracking-tight leading-[40px] md:leading-[50px] lg:leading-[55px] text-[28px] md:text-[36px] lg:text-[42px]">
+                    <div className="flex justify-center text-center text-[#242424] font-extrabold tracking-tight leading-10 md:leading-[50px] lg:leading-[55px] text-[28px] md:text-[36px] lg:text-[42px]">
                         <span className="pt-1">5</span>-DAYS EVENT
                     </div>
 
                     <img
-                        className="absolute bottom-[56%] sm:bottom-[60%] translate-y-1/2 right-[45px] md:right-[90px] lg:right-[145px] w-[30px] md:w-8 lg:w-8"
+                        className="absolute bottom-[56%] smp sm:bottom-[60%] translate-y-1/2 right-[45px] md:right-[90px] lg:right-[145px] w-[30px] md:w-8 lg:w-8"
                         src={PartyP}
                         alt="Techstars-abuja-Party-decoration"
                     />
@@ -170,7 +170,7 @@ function Home() {
                 <div>
                     <div className="">
 
-                    <div className="flex justify-center text-center text-[#242424] font-extrabold tracking-tight leading-[40px] md:mt-0 mt-6 md:leading-[50px] lg:leading-[55px] text-[25px] md:text-[32px] lg:text-[40px]">
+                    <div className="flex justify-center text-center text-[#242424] font-extrabold tracking-tight leading-10 md:mt-0 mt-6 md:leading-[50px] lg:leading-[55px] text-[25px] md:text-[32px] lg:text-[40px]">
                         <span className="pt-1">Meet the Speakers & Mentors</span>
                     </div>
                     </div>

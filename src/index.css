@@ -39,6 +39,37 @@ body {
   }
 }
 
+@media screen and (max-width:767px) {
+  .smp{
+    right: 68px;
+  }
+}
+
+
+@media screen and (max-width:424px) {
+  .smp{
+    right: 40px;
+  }
+}
+
+
+@media screen and (max-width:360px) {
+  .smp{
+    right: 30px;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .smp{
+    right: 20px;
+  }
+}
+
+@media screen and (max-width:330px) {
+  .smp{
+    display: none;
+  }
+}
 
 
 @media screen and (max-width:640px) {
