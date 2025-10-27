@@ -89,7 +89,7 @@ function Home() {
                     </div>
 
                     <img
-                        className="absolute bottom-[56%] sm:bottom-[60%] translate-y-1/2 right-[52px] md:right-[90px] lg:right-[145px] w-[30px] md:w-[32px] lg:w-[32px]"
+                        className="absolute bottom-[56%] sm:bottom-[60%] translate-y-1/2 right-[45px] md:right-[90px] lg:right-[145px] w-[30px] md:w-8 lg:w-8"
                         src={PartyP}
                         alt="Techstars-abuja-Party-decoration"
                     />

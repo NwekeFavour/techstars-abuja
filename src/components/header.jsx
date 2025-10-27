@@ -23,7 +23,7 @@ const Header = () => {
     <header className="w-full z-50 bg-transparent text-white">
       <div className="container mx-auto flex items-center justify-between px-6 py-5">
         {/* Logo */}
-        <Link to="/" className="lg:text-[32px] md:text-[30px] sm:text-[27px] text-[25px] font-bold">
+        <Link to="/" className="lg:text-[32px] bitcount text-white! md:text-[30px] sm:text-[27px] text-[25px] font-bold">
           <span className="text-white">Tech</span>
           <span>Stars.</span>
         </Link>
