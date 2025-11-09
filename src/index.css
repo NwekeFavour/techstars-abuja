@@ -101,4 +101,8 @@ body {
   .sam{
     margin-block: 120px !important;
   }
+  .upc{
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
