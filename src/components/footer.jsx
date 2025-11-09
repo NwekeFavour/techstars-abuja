@@ -37,7 +37,7 @@ export default function Footer(props) {
                         </li>
                     </ul>
                 </div>
-                <div className='lg:my-0 my-5'>
+                <div className='lg:my-0 my-5'>    
                     <p className="m-0 md:text-[22px] sm:text-[20px] text-[18px] text-white font-semibold">Social Hashtags</p>
                     <p className="m-0 md:text-[18px] text-white lg:text-center  md:my-1 my-2">#StartupWeekFCT</p>
                     <p className="m-0 md:text-[18px] text-white lg:text-center">#TechstarsAbuja</p>
