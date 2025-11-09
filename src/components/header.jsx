@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import TechStars from "../../public/image/techstars.svg"
 
 const Header = () => {
   const navLinks = [
@@ -24,8 +25,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-5">
         {/* Logo */}
         <Link to="/" className="lg:text-[32px] bitcount text-white! md:text-[30px] sm:text-[27px] text-[25px] font-bold">
-          <span className="text-white">Tech</span>
-          <span>Stars.</span>
+          <img src={TechStars} className="md:w-[180px] md:h-[66px] w-[100px] h-[37px]" alt="techstars-abuja-logo" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ const Header = () => {
 
         {/* Register Button (desktop) */}
         <div className="hidden xl:block">
-          <Link to={"/auth/login"} className="bg-blue-900 px-5 py-3 hover:bg-white hover:text-[#0C0C9D] text-white rounded-md text-sm font-medium">
+          <Link to={"/auth/login"} className="bg-[#439642] px-5 py-3 hover:bg-white hover:text-[#439642] text-white rounded-md text-sm font-medium">
             Register Now
           </Link>
         </div>
@@ -81,7 +81,7 @@ const Header = () => {
 
                 {/* Register Button */}
                 <SheetClose asChild>
-                <Link to={"/auth/register"} className="mt-8 flex justify-center hover:bg-white hover:text-[#0C0C9D] bg-blue-900 w-full text-white text-base py-3 rounded-lg">
+                <Link to={"/auth/register"} className="mt-8 flex justify-center hover:bg-white hover:text-[#439642] bg-blue-900 w-full text-white text-base py-3 rounded-lg">
                     Register Now
                 </Link>
                 </SheetClose>

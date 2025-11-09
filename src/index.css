@@ -20,6 +20,31 @@ body {
  
 }
 
+.daytwo{
+  background-image: url("../public/image/pic1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.daythree{
+  background-image: url("../public/image/pic3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dayfour{
+  background-image: url("../public/image/pic4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dayfive{
+  background-image: url("../public/image/pic5.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .bitcount{
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
