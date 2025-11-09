@@ -86,7 +86,7 @@ export default function Contacts() {
                 </div>
             </div>
             </CardContent>
-            <Separator className="bg-[#8E8EFF] my-9 h-2 p-0 w-full sm:my-5" />
+            <Separator className="bg-[#4DCE7C] my-9 h-2 p-0 w-full sm:my-5" />
         </div>
         <div className="md:px-12 px-3">
             <p className="sm:text-[20px] text-[12px] sm:text-start text-center font-bold leading-[30px] mb-2">Connect with us</p>
