@@ -44,7 +44,7 @@ export default function Footer(props) {
                     
                 </div>
                 <div>
-                    <p className="m-0 md:text-[20px] md:block hidden sm:text-[18px] text-[17px] text-white font-semibold">www.techstars.com</p>
+                    <Link to={"https://www.techstars.com"} className="m-0 md:text-[20px] md:block hidden sm:text-[18px] text-[17px] text-white font-semibold">www.techstars.com</Link>
                     <p className="m-0 md:text-[18px] text-[17px] text-white font-bold md:mt-6">Newsletter</p>
                     <Textarea className="md:w-[355px] md:block hidden  lg:h-fit  mt-3 lg:py-5 bg-white" id="message" placeholder="Enter your message" rows={4} />
                     <Input className="md:hidden block bg-white  px-7 py-6 my-3" placeholder="Enter your email" />
